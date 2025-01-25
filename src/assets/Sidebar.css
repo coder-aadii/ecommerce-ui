@@ -1,0 +1,94 @@
+/* Sidebar (fixed on the left side) */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 30px;
+    /* Adjusted to allow space for the fixed navbar */
+    left: 0;
+    height: 100%;
+    background-color: #9ac1ff;
+    /* Updated background color */
+    color: white;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    z-index: 100;
+    /* Ensure sidebar is above other content */
+}
+
+.sidebar.closed {
+    transform: translateX(-250px);
+    /* Hidden when closed */
+}
+
+/* Sidebar Links */
+.sidebar-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-links li {
+    margin: 15px 0;
+}
+
+.sidebar-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.sidebar-links li a:hover {
+    color: #fff;
+    opacity: 0.8;
+    /* Highlight on hover */
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 101;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Hamburger Menu for mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-250px);
+        /* Sidebar hidden by default on mobile */
+    }
+
+    .hamburger {
+        display: flex;
+        /* Show hamburger on mobile */
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+        /* Sidebar shown when open */
+    }
+}
+
+/* Ensure sidebar is open by default on screens larger than 768px */
+@media (min-width: 769px) {
+    .sidebar {
+        transform: translateX(0);
+        /* Sidebar is open by default on larger screens */
+    }
+
+    .hamburger {
+        display: none;
+        /* Hide hamburger on larger screens */
+    }
+}

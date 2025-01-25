@@ -1,0 +1,36 @@
+/* Top Navbar */
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3B82F6;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-navbar .navbar-left h2 {
+    margin: 0;
+}
+
+.top-navbar .navbar-right .profile {
+    margin-right: 80px;
+}
+
+@media (max-width: 768px) {
+    .top-navbar {
+        padding: 10px;
+    }
+
+    .navbar-left h2 {
+        font-size: 1.2rem;
+    }
+
+    .navbar-right .profile {
+        font-size: 0.9rem;
+    }
+}

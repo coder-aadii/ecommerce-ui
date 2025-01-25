@@ -1,0 +1,57 @@
+/* src/components/Pagination.css */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.pagination button.active {
+    background-color: #3B82F6;
+    /* Sky Blue */
+    color: white;
+    border-color: #3B82F6;
+}
+
+.pagination button:hover {
+    background-color: #3B82F6;
+    /* Sky Blue */
+    color: white;
+}
+
+.pagination button:disabled {
+    background-color: #e0e0e0;
+    color: #bbb;
+    cursor: not-allowed;
+    border-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .pagination button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagination {
+        padding: 15px;
+    }
+
+    .pagination button {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+}
