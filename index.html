@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drezzo - Seller Login</title>
+
+    <!-- MDB Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet">
+
+    <!-- Favicon Link -->
+    <link rel="icon" href="/assets/images/Drezzo-Favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/styles/main.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="#" class="form" id="form1">
+                <h2 class="form__title">Sign Up</h2>
+                <input type="text" placeholder="User" class="input" />
+                <input type="email" placeholder="Email" class="input" />
+                <input type="password" placeholder="Password" class="input" />
+                <button class="btn">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Sign In -->
+        <div class="container__form container--signin">
+            <form action="#" class="form" id="form2">
+                <h2 class="form__title">Sign In</h2>
+                <input type="email" placeholder="Email" class="input" />
+                <input type="password" placeholder="Password" class="input" />
+                <a href="#" class="link">Forgot your password?</a>
+                <button class="btn">Sign In</button>
+            </form>
+        </div>
+
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__background"></div> <!-- New background div with blur -->
+                <div class="overlay__panel overlay--left">
+                    <img src="/assets/images/Drezzo-logo.png" alt="Drezzo Logo">
+                    <span class="welcome-message new-user">
+                        <span class="welcome-message-blur">
+                            Welcome to Drezzo, where fashion meets technology. Manage your clothing inventory, update
+                            your collections, and reach a broader audience with ease.
+                        </span>
+                    </span>
+
+                    <button class="btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <img src="/assets/images/Drezzo-logo.png" alt="Drezzo Logo">
+                    <span class="welcome-message old-user">
+                        <span class="welcome-message-blur">
+                            Welcome back to Drezzo! Keep managing your collections,
+                            updating inventory, and expanding your
+                            audience.
+                        </span>
+                    </span>
+                    <button class="btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MDB Bootstrap JavaScript and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+
+    <!-- Optional: Popper.js for Bootstrap tooltips and popovers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+    <!-- Optional: jQuery for Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        const signInBtn = document.getElementById("signIn");
+        const signUpBtn = document.getElementById("signUp");
+        const fistForm = document.getElementById("form1");
+        const secondForm = document.getElementById("form2");
+        const container = document.querySelector(".container");
+
+        signInBtn.addEventListener("click", () => {
+            container.classList.remove("right-panel-active");
+        });
+
+        signUpBtn.addEventListener("click", () => {
+            container.classList.add("right-panel-active");
+        });
+
+        fistForm.addEventListener("submit", (e) => e.preventDefault());
+        secondForm.addEventListener("submit", (e) => e.preventDefault());
+    </script>
+</body>
+
+</html>
