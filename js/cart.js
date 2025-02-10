@@ -62,7 +62,7 @@ function saveCardValues() {
     const cartTotal = document.getElementById("cart-total")
     const subTotal = document.getElementById("subtotal")
     const fastCargo = document.getElementById("fast-cargo")
-    const fastCargoPrice = 15
+    const fastCargoPrice = 699
     let itemsTotal = 0
 
     cart.length > 0 && cart.map((item) => itemsTotal += item.price.newPrice * item.quantity)

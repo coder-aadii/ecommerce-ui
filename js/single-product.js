@@ -25,6 +25,9 @@ const findProduct = products.find((item) => item.id === Number(productId))
 const productTitle = document.querySelector(".product-title")
 productTitle.innerHTML = findProduct.name
 
+/* product description */
+const productDescription = document.querySelector(".product-description");
+productDescription.innerHTML = findProduct["product-description"];
 
 /* product price */
 const productOldPrice = document.querySelector(".old-price")

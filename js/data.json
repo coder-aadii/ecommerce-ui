@@ -1,12 +1,13 @@
 [
     {
         "id": 1,
-        "name": "Analogue Resin Strap",
+        "name": "Caprese Enigma Gold",
         "price": {
             "oldPrice": 17999.00,
             "newPrice": 5400.00
         },
-        "discount": 22,
+        "product-description": "Inspired by the picturesque Isle of Capri, Caprese handbags are designed with the modern woman in mind. International, sleek and chic, they are the perfect accessory for any occasion. Adorned with sparkling fringes and embellished with countless light reflecting crystals and stones this collection of party bags and clutches have the right amount of razzle dazzle.",
+        "discount": 30,
         "img": {
             "singleImage": "img/products/product1/1.png",
             "thumbs": [
@@ -23,7 +24,8 @@
             "oldPrice": 2498.00,
             "newPrice": 575.00
         },
-        "discount": 33,
+        "product-description": "Embrace tropical vibes with this stunning Women Tropical Bodycon Dress. Designed for a flattering fit, this dress features a figure-hugging silhouette that accentuates your curves in all the right places. The elegant front-slit adds a touch of sophistication while ensuring comfortable movement. Perfect for warm weather outings, beach getaways, or summer parties, the bold tropical print offers a vibrant, eye-catching look.",
+        "discount": 67,
         "img": {
             "singleImage": "img/products/product2/1.png",
             "thumbs": [
@@ -32,15 +34,16 @@
                 "img/products/product2/3.png"
             ]
         }
-    },
+    },    
     {
         "id": 3,
-        "name": "Blush Beanie",
+        "name": "Aldo's MARISTOU Ankle Strap Stilettos",
         "price": {
-            "oldPrice": 105.00,
-            "newPrice": 67.00
+            "oldPrice": 12999.00,
+            "newPrice": 7790.00
         },
-        "discount": 90,
+        "product-description": "Featuring a style that makes it easy to wear, this pair of black casual sandals from Aldo will be a smart pick for you. The stylish synthetic upper ensures longevity and also add to the overall look. With an approximate heel height of 4-inch, this pair comes with a rubber sole which provides you with a good traction. It will look good when matched with a pair of jeans and a T-shirt.",
+        "discount": 40,
         "img": {
             "singleImage": "img/products/product3/1.png",
             "thumbs": [
@@ -52,11 +55,12 @@
     },
     {
         "id": 4,
-        "name": "Mercury Tee",
+        "name": "Sequin Embellished Bodycon Mini Dress",
         "price": {
-            "oldPrice": 55.00,
-            "newPrice": 48.00
+            "oldPrice": 4299.00,
+            "newPrice": 2579.00
         },
+        "product-description":"Turn heads with this stunning pink bodycon dress, designed to hug your figure for a sleek and flattering silhouette. The dress features elegant sequin embellishments that add a touch of sparkle, making it perfect for special occasions or a night out. Shoulder straps and a sleeveless design offer a modern, sophisticated look while ensuring comfort and style. With its mini length and straight hem, this dress exudes confidence and chic elegance, making it a must-have addition to your wardrobe.",
         "discount": 40,
         "img": {
             "singleImage": "img/products/product4/1.png",
@@ -69,12 +73,13 @@
     },
     {
         "id": 5,
-        "name": "La Bohème Rose Gold",
+        "name": "Vyb Runway Bracelet Style Straps Watch",
         "price": {
-            "oldPrice": 78.00,
-            "newPrice": 48.00
+            "oldPrice": 2070.00,
+            "newPrice": 1449.00
         },
-        "discount": 40,
+        "product-description":"Elevate your style with this timeless analogue watch, a perfect blend of elegance and functionality. Powered by quartz movement and a battery power source, it ensures precise timekeeping throughout the day. The rose gold-toned textured rectangular alloy dial adds a touch of luxury, making this watch a standout accessory. The bracelet-style stainless steel strap with a foldover clasp offers both durability and comfort. Please note that this watch is non-resistant to water, making it ideal for everyday wear in dry conditions.",
+        "discount": 30,
         "img": {
             "singleImage": "img/products/product5/1.png",
             "thumbs": [
@@ -83,5 +88,23 @@
                 "img/products/product5/3.png"
             ]
         }
-    }
+    },
+    {
+        "id": 6,
+        "name": "Stunning Maroon Lurex and Satin Saree",
+        "price": {
+            "oldPrice": 2199.00,
+            "newPrice": 1759.00
+        },
+        "product-description": "Make a bold statement with this stunning pre-draped saree crafted from maroon lurex and satin. The accompanying bralette-style blouse is adorned with dramatic coin-like sequins, featuring adjustable noodle straps and a secure hook-eye closure for a comfortable fit. Perfect for cocktail parties, this saree is designed to turn heads. Pair it with silver dangling earrings, rings, copper-toned eye makeup, and a flawless blowout to complete the look. Step into the spotlight with this eye-catching ensemble and steal the show at any event.",
+        "discount": 20,
+        "img": {
+            "singleImage": "img/products/product6/1.png",
+            "thumbs": [
+                "img/products/product6/1.png",
+                "img/products/product6/2.png",
+                "img/products/product6/3.png"
+            ]
+        }
+    }    
 ]
