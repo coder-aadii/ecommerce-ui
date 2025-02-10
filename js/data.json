@@ -3,8 +3,8 @@
         "id": 1,
         "name": "Analogue Resin Strap",
         "price": {
-            "oldPrice": 160.00,
-            "newPrice": 108.00
+            "oldPrice": 17999.00,
+            "newPrice": 5400.00
         },
         "discount": 22,
         "img": {
@@ -18,10 +18,10 @@
     },
     {
         "id": 2,
-        "name": "Ridley High Waist",
+        "name": "Tropical Bodycon Dress",
         "price": {
-            "oldPrice": 265.00,
-            "newPrice": 208.00
+            "oldPrice": 2498.00,
+            "newPrice": 575.00
         },
         "discount": 33,
         "img": {

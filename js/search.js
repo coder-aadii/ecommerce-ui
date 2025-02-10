@@ -3,12 +3,12 @@ function searchFunc(data) {
     let result = ""
     data.forEach((item) => {
         result += `
-                    <a href="#" class="result-item" data-id="₹{item.id}">
-                        <img src="₹{item.img.singleImage}" class="search-thumb" alt="">
+                    <a href="#" class="result-item" data-id="${item.id}">
+                        <img src="${item.img.singleImage}" class="search-thumb" alt="">
                         <div class="search-info">
-                        <h4>₹{item.name}</h4>
+                        <h4>${item.name}</h4>
                         <span class="search-sku">SKU : PD0016</span>
-                        <span class="search-price">₹₹{(item.price.newPrice).toFixed(2)}</span>
+                        <span class="search-price">₹${(item.price.newPrice).toFixed(2)}</span>
                         </div>  
                     </a>    
                 `
@@ -29,12 +29,12 @@ function searchFunc(data) {
         if (filtered.length > 1) {
             filtered.forEach((item) => {
                 result += `
-                        <a href="#" class="result-item" data-id="₹{item.id}">
-                            <img src="₹{item.img.singleImage}" class="search-thumb" alt="">
+                        <a href="#" class="result-item" data-id="${item.id}">
+                            <img src="${item.img.singleImage}" class="search-thumb" alt="">
                             <div class="search-info">
-                            <h4>₹{item.name}</h4>
+                            <h4>${item.name}</h4>
                             <span class="search-sku">SKU : PD0016</span>
-                            <span class="search-price">₹₹{(item.price.newPrice).toFixed(2)}</span>
+                            <span class="search-price">₹${(item.price.newPrice).toFixed(2)}</span>
                             </div>  
                         </a>    
                     `
@@ -53,12 +53,12 @@ function searchFunc(data) {
             } else {
                 filtered.forEach((item) => {
                     result += `
-                        <a href="#" class="result-item" data-id="₹{item.id}">
-                            <img src="₹{item.img.singleImage}" class="search-thumb" alt="">
+                        <a href="#" class="result-item" data-id="${item.id}">
+                            <img src="${item.img.singleImage}" class="search-thumb" alt="">
                             <div class="search-info">
-                            <h4>₹{item.name}</h4>
+                            <h4>${item.name}</h4>
                             <span class="search-sku">SKU : PD0016</span>
-                            <span class="search-price">₹₹{(item.price.newPrice).toFixed(2)}</span>
+                            <span class="search-price">₹${(item.price.newPrice).toFixed(2)}</span>
                             </div>  
                         </a>    
                     `

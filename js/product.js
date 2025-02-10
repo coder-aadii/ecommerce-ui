@@ -62,12 +62,12 @@ async function productFunc(products) {
                 <li class="product-item glide__slide">
                     <div class="product-image">
                         <a href="" >
-                            <img src="₹{product.img.singleImage}" alt="" class="img1" />
-                            <img src="₹{product.img.thumbs[1]}" alt="" class="img2" data-id="₹{product.id}" />
+                            <img src="${product.img.singleImage}" alt="" class="img1" />
+                            <img src="${product.img.thumbs[1]}" alt="" class="img2" data-id="${product.id}" />
                         </a>
                     </div>
                     <div class="product-info">
-                    <a href="#" class="product-title"> ₹{product.name} </a>
+                    <a href="#" class="product-title"> ${product.name} </a>
                     <ul class="product-star">
                         <li>
                         <i class="bi bi-star-fill"></i>
@@ -86,18 +86,18 @@ async function productFunc(products) {
                         </li>
                     </ul>
                     <div class="product-prices">
-                        <strong class="new-price">₹₹{product.price.newPrice.toFixed(2)}</strong>
-                        <span class="old-price">₹₹{product.price.oldPrice.toFixed(2)}</span>
+                        <strong class="new-price">₹${product.price.newPrice.toFixed(2)}</strong>
+                        <span class="old-price">₹${product.price.oldPrice.toFixed(2)}</span>
                     </div>
-                    <span class="product-discount"> ₹{product.discount}% </span>
+                    <span class="product-discount"> ${product.discount}% </span>
                     <div class="product-links">
-                        <button class="add-to-cart" data-id="₹{product.id}">
+                        <button class="add-to-cart" data-id="${product.id}">
                         <i class="bi bi-basket-fill"></i>
                         </button>
                         <button>
                         <i class="bi bi-heart-fill"></i>
                         </button>
-                        <a href="#" class="product-link" data-id="₹{product.id}">
+                        <a href="#" class="product-link" data-id="${product.id}">
                         <i class="bi bi-eye-fill"></i>
                         </a>
                         <a href="#">

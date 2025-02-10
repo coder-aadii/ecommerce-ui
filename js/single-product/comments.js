@@ -59,16 +59,16 @@ const addNewCommentFunc = () => {
                             <div class="comment-text">
                                 <ul class="comment-stars">
 
-                                    ₹{stars}
+                                    ${stars}
                                 </ul>
                                 <div class="comment-meta">
-                                    <strong>₹{item.name}</strong>
+                                    <strong>${item.name}</strong>
                                     <span>-</span>
-                                    <time>₹{day + "/" + month + "/" + year}</time>
+                                    <time>${day + "/" + month + "/" + year}</time>
                                 </div>
                                 <div class="comment-description">
                                     <p>
-                                        ₹{item.text}
+                                        ${item.text}
                                     </p>
                                 </div>
                             </div>
